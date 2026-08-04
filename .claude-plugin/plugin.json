@@ -8,7 +8,7 @@
     "url": "https://novence.ai"
   },
   "homepage": "https://novence.ai/mcp",
-  "repository": "https://github.com/novence/novence-mcp",
+  "repository": "https://github.com/LincChad/novence-mcp",
   "license": "MIT",
   "keywords": ["mcp", "static-sites", "hosting", "deploy", "claude-code"]
 }
