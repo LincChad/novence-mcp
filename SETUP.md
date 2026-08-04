@@ -4,7 +4,7 @@ Use this skill when the user installs the Novence plugin or needs an API key for
 
 ## Goal
 
-Connect Claude Code to the hosted Novence MCP server at `https://api.novence.ai/mcp` using a Bearer `nv_` API key.
+Connect Claude Code (or Cursor / other MCP clients) to the hosted Novence MCP server at `https://api.novence.ai/mcp` using a Bearer `nv_` API key.
 
 ## Steps
 
@@ -17,11 +17,28 @@ curl -sS -X POST https://api.novence.ai/v1/bootstrap \
   -d '{"email":"USER_EMAIL"}'
 ```
 
-3. The response includes an `nv_…` API key. Tell the user to export it:
+3. The response includes an `nv_…` API key. Store it with the pattern that matches the client:
+
+### Claude Code (plugin)
+
+Prefer plugin settings / Keychain — do **not** require a shell export.
+
+1. Enable the Novence plugin (API key is optional at enable time).
+2. After bootstrap, set **Novence API key** in the plugin config (`/plugin` → Novence → options), or pass it at install:
+
+```bash
+claude plugin install <plugin> --config api_key='nv_…'
+```
+
+Sensitive values are stored in the macOS Keychain (or Claude’s protected credentials file on other platforms). The plugin MCP header uses `${user_config.api_key}`.
+
+### Cursor / shell / other clients
 
 ```bash
 export NOVENCE_API_KEY='nv_…'
 ```
+
+Then use env interpolation in MCP config, e.g. `"Authorization": "Bearer ${env:NOVENCE_API_KEY}"` (Cursor) or paste the key into headers for generic clients.
 
 4. Optionally verify the emailed OTP via REST (`POST /v1/auth/verify`) to unlock full Free quotas. Unverified keys still work with limited quotas.
 5. Confirm MCP tools with `/mcp` — Novence tools such as `list_projects`, `create_project`, and `deploy` should appear.
