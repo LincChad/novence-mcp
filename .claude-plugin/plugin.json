@@ -1,0 +1,14 @@
+{
+  "name": "novence",
+  "description": "Hosted MCP for creating, checking, deploying, and hosting static sites. Bootstrap an nv_ API key, upload HTML/CSS/JS, run quality checks, publish to the edge.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Novence",
+    "email": "support@novence.ai",
+    "url": "https://novence.ai"
+  },
+  "homepage": "https://novence.ai/mcp",
+  "repository": "https://github.com/novence/novence-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "static-sites", "hosting", "deploy", "claude-code"]
+}

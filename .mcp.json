@@ -1,0 +1,9 @@
+{
+  "novence": {
+    "type": "http",
+    "url": "https://api.novence.ai/mcp",
+    "headers": {
+      "Authorization": "Bearer ${NOVENCE_API_KEY}"
+    }
+  }
+}
