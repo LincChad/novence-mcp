@@ -7,7 +7,7 @@ Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for **No
 - **Docs:** [novence.ai/mcp](https://novence.ai/mcp)
 - **Privacy:** [novence.ai/privacy](https://novence.ai/privacy)
 
-This repository is the **Claude Code plugin / install package**. The MCP server itself is hosted; there is nothing to run locally.
+This repository is the **Claude Code plugin / install package** ([LincChad/novence-mcp](https://github.com/LincChad/novence-mcp)). The MCP server itself is hosted; there is nothing to run locally.
 
 ## Get an API key
 
@@ -74,7 +74,7 @@ One-click install (replace the key after install, or use env interpolation):
 
 ## Official registry
 
-Published as `ai.novence/mcp` on [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io).
+Published as `io.github.LincChad/novence-mcp` on [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io).
 
 ## License
 
