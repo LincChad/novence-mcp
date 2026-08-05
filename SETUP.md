@@ -30,6 +30,8 @@ Prefer plugin settings / Keychain — do **not** require a shell export.
 claude plugin install <plugin> --config api_key='nv_…'
 ```
 
+3. Run `/reload-plugins` so Claude Code picks up the key if the MCP server was skipped or started while `api_key` was blank. Harmless no-op if the server was already connected with a valid key.
+
 Sensitive values are stored in the macOS Keychain (or Claude’s protected credentials file on other platforms). The plugin MCP header uses `${user_config.api_key}`.
 
 ### Cursor / shell / other clients
