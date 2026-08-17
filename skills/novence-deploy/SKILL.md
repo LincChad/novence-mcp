@@ -20,13 +20,14 @@ Use the Novence MCP tools (server `novence`) for static-site hosting.
 4. `deploy` (optionally `force`).
 5. Poll `get_deployment_status` / `get_checks_results` until published.
 6. `get_preview_url` for the live URL (`https://{suffix}.novence.ai`).
-7. Optional: `configure_custom_domain`, `create_form`, `get_quotas_and_usage`.
+7. Optional: `configure_custom_domain`, `create_form`, `get_quotas_and_usage`, `invite_project_member` (Pro/Scale owner).
 
 ## Rules
 
 - Prefer batch upload tools for multi-file sites.
 - Do not invent APIs — use the MCP tools.
 - For a local HTML billing/account console, use `get_account_console_kit` / `create_account_session` (never embed `nv_` in HTML).
+- Team seats: `invite_project_member` requires the **project owner** to be on Pro or Scale. Collaborators use their own keys and the existing `project_id`. `create_project` always bills the caller.
 
 ## Video & large media
 
