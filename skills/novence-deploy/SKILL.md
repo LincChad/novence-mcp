@@ -20,7 +20,7 @@ Use the Novence MCP tools (server `novence`) for static-site hosting.
 4. `deploy` (optionally `force`).
 5. Poll `get_deployment_status` / `get_checks_results` until published.
 6. `get_preview_url` for the live URL (`https://{suffix}.novence.ai`).
-7. Optional: `configure_custom_domain`, `create_form`, `get_quotas_and_usage`, `invite_project_member` (Pro/Scale owner).
+7. Optional: `configure_custom_domain`, `create_form`, `get_quotas_and_usage`, `get_project_analytics`, `invite_project_member` (Pro/Scale owner).
 
 ## Rules
 
