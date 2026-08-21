@@ -79,12 +79,12 @@ One-click install: [Add to Cursor](https://novence.ai/mcp#connect)
 | `run_checks` / `get_checks_results` | Quality checks (Lighthouse, a11y, links) |
 | `configure_custom_domain` / `get_domain_status` | Custom domains |
 | `create_form` / `list_forms` / `update_form` / `list_form_submissions` / `delete_form_submission` | Forms |
-| `get_quotas_and_usage` / `get_project_usage` / `get_project_analytics` / `get_account` | Quotas, usage, and site traffic |
+| `get_quotas_and_usage` / `get_project_usage` / `update_project_settings` (`analytics_enabled`) / `get_project_analytics` / `get_account` | Quotas, usage, and opt-in site traffic |
 | `create_account_session` / `get_account_console_kit` | Billing/account console kit (never embed `nv_` in HTML) |
 
 ## Official registry
 
-Published as `io.github.LincChad/novence-mcp` on [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io).
+Published as `ai.novence/mcp` on [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io).
 
 ## License
 
